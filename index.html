@@ -1,0 +1,24 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+        <div>
+            <form ref='uploadForm'
+                  id='uploadForm'
+                  action='http://sendfile.mybluemix.net/send'
+                  method='post'
+                  encType="multipart/form-data">
+                <p>
+                    Please select a file to send and enter recipients address and the messages subject:
+                </p>
+                <input type="file" name="uploadFile">
+                <input type="text" placeholder="Recipients Address" name="email">
+                <input type="text" placeholder="Message Subject" name="subject">
+                <p>
+                    <input type='submit' value='Send'>
+                </p>
+            </form>
+        </div>
+</body>
+</html>
